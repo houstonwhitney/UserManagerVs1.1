@@ -30,6 +30,7 @@ Route::group(['prefix' => '/user'], function() {
     Route::post('/update','UserController@updateUser');
     Route::post('/del/{id}','UserController@deleteUser');
     Route::get('/rech/{id}','UserController@findById');
+    Route::get('/roles/{id}','UserController@getRolesById');
     Route::get('/rechName/{first_name}','UserController@findByName');
 });
 

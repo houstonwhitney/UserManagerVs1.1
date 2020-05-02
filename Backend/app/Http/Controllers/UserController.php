@@ -131,5 +131,10 @@ class UserController extends Controller
         });
         echo "Email Sent with attachment. Check your inbox.";
      }
+
+     public function getRolesById($id){
+         $users = User::find($id);
+         return $users->roles;
+     }
     
 }

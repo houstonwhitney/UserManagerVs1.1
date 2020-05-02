@@ -13,7 +13,7 @@ class MailController extends Controller
 
 
        public function basic_email() {
-          $data = ['name'=>"Virat Gandhi"];
+          $data = ['name'=>"Virat Gandhi",'password'=>"hkjdhfhhjgfgfg"];
        
           Mail::send('mail', $data, function($message) {
              $message->to('tchamouramses@gmail.com', 'Tutorials Point')->subject
